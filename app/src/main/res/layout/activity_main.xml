@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A78E6A"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/jayas_cafe_header_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="cursive"
+        android:text="Jaya's Cafe"
+        android:textColor="#721414"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/employer_login_btn"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_login_btn_red_shape"
+        android:text="Log in as employer"
+        android:textAllCaps="false"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jayas_cafe_header_txt" />
+
+    <Button
+        android:id="@+id/employee_login_btn"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/round_login_btn_green_shape"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Log out as employee"
+        android:textAllCaps="false"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jayas_cafe_header_txt" />
+
+    <ImageView
+        android:id="@+id/coffee_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/employee_login_btn"
+        app:layout_constraintStart_toEndOf="@+id/employer_login_btn"
+        app:layout_constraintTop_toBottomOf="@+id/jayas_cafe_header_txt"
+        app:srcCompat="@drawable/coffee_img" />
+
+    <TextView
+        android:id="@+id/week_and_date_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Week 28: 6-12 July"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffee_img" />
+
+    <TextView
+        android:id="@+id/mon_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:text="M"
+        app:layout_constraintBottom_toTopOf="@+id/tue_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/employer_login_btn" />
+
+    <TextView
+        android:id="@+id/tue_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="T"
+        app:layout_constraintBottom_toTopOf="@+id/wed_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mon_txt" />
+
+    <TextView
+        android:id="@+id/wed_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="W"
+        app:layout_constraintBottom_toTopOf="@+id/thu_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tue_txt" />
+
+    <TextView
+        android:id="@+id/thu_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="T"
+        app:layout_constraintBottom_toTopOf="@+id/fri_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wed_txt" />
+
+    <TextView
+        android:id="@+id/fri_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="F"
+
+        app:layout_constraintBottom_toTopOf="@+id/sat_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thu_txt" />
+
+    <TextView
+        android:id="@+id/sat_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+
+        android:text="S"
+        app:layout_constraintBottom_toTopOf="@+id/sun_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fri_txt" />
+
+    <TextView
+        android:id="@+id/sun_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="S"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sat_txt" />
+
+    <TextView
+        android:id="@+id/am-txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="AM"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/week_and_date_txt" />
+
+    <TextView
+        android:id="@+id/pm_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
+        android:text="PM"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/week_and_date_txt" />
+
+    <TextView
+        android:id="@+id/mon_am_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Jessica/Mark"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/mon_txt"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/mon_txt" />
+
+    <TextView
+        android:id="@+id/tue_am_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Simon/Jaque"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/tue_txt"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/tue_txt" />
+
+    <TextView
+        android:id="@+id/wed_am_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Jaque/Mark"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/wed_txt"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/wed_txt" />
+
+    <TextView
+        android:id="@+id/thu_am_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Simon/Jessica"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/thu_txt"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/thu_txt" />
+
+    <TextView
+        android:id="@+id/fri_am_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Mark/Simon"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/fri_txt"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/fri_txt" />
+
+    <TextView
+        android:id="@+id/sat_am_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Jessica/Simon"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/sat_txt"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/sat_txt" />
+
+    <TextView
+        android:id="@+id/sun_am_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Jaque/Jessica"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/sun_txt" />
+
+    <TextView
+        android:id="@+id/mon_pm_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Simon/Mark"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/mon_am_txt"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/mon_am_txt" />
+
+    <TextView
+        android:id="@+id/tue_pm_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Jaque/Mark"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/tue_am_txt"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/tue_am_txt" />
+
+    <TextView
+        android:id="@+id/wed_pm_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Mark/Jessica"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/wed_am_txt"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/wed_am_txt" />
+
+    <TextView
+        android:id="@+id/thu_pm_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Simon/Jaque"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/thu_am_txt"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/thu_am_txt" />
+
+    <TextView
+        android:id="@+id/fri_pm_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Mark/Jessica"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/fri_am_txt"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/fri_am_txt" />
+
+    <TextView
+        android:id="@+id/sat_pm_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Simon/Mark"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/sat_am_txt"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/sat_am_txt" />
+
+    <TextView
+        android:id="@+id/sun_pm_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="2dp"
+        android:text="Simon/Jaque"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/sun_am_txt"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/sun_am_txt" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <TextView
+        android:id="@+id/branch_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kings Cross "
+        android:textColor="#000000"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/jayas_cafe_header_txt"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/jayas_cafe_header_txt" />
+
+    <TextView
+        android:id="@+id/shifts_booked_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="Hi Jessica, you have 6 shifts booked for next week."
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sun_am_txt" />
+
+    <Button
+        android:id="@+id/swap_shifts_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="#8B6442"
+        android:text="Request to swap shifts"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shifts_booked_txt" />
+
+    <Button
+        android:id="@+id/accept_shifts_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="#8B6442"
+        android:text="Accept your shifts"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shifts_booked_txt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
